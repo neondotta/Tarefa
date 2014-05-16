@@ -1,0 +1,30 @@
+<h1>Cadastro de Usuários</h1>
+
+<form action="" method="post" onsubmit="return false">
+
+	Matricula:<br />
+	<input type="text" name="mat" />
+	<br /><br />
+	Nome:<br />
+	<input type="text" name="nom" />
+	<br /><br />
+	Nível:
+	<select name="niv">
+    	<option name="Usuario">Usuario</option>
+    	<option name="Operador">Operador</option>
+    	<option name="Administrador">Administrador</option>
+    </select>
+	<br /><br />
+	Senha:
+	<input type="password" name="sen" />
+	<br /><br />
+	Ativo:
+	<select name="ati">
+    	<option name="sim">sim</option>
+    	<option name="não">não</option>
+    </select>
+	<input type="button" name="Enviar" value="Enviar" onclick="Ajax('../php/usuario-exec.php?act=inserir&mat='+mat.value+'&nom='+nom.value+'&niv='+niv.value+'&sen='+sen.value+'&ati='+ati.value+,'msg')" />
+
+	<div id="msg"></div>
+
+</form>

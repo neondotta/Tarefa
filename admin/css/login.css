@@ -1,0 +1,11 @@
+input .login,input .pass{
+		
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+}
+
+input .login:active,input .pass:active{
+
+	border:;
+}
